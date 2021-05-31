@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./javascripts/spotifyapp.js" defer></script>
-  <title>Spotify Finder App</title>
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer>
-    <div class="location">
-      <p><span id="city"></span>, <span id="country"></span></p>
-    </div>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./javascripts/spotifyapp.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/32f374c92f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/stylesheets/mobile.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify Finder App</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fab fa-spotify"></i>
+        <p>Spotify Finder App</p>
+      </div>
+    </header>
+    <main>
+      <form action="/" method="get">
+        <ul>
+        <li>
+          <label id="search">Find your favorite artist</label>
+        </li>
+        <li>
+          <div class="search-box">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+            <input type="text" name="artist" id="search" required autofocus autocomplete="off"/>
+          </div>
+        </li>
+        <li>
+          <button type="submit">Search</button>
+        </li>
+      </ul>
+      </form>
+    </main>
+    <footer>
+      <div class="location">
+        <p><span id="city"></span>, <span id="country"></span></p>
+      </div>
+      <div class="social">
+        <div class="icon">
+          <a href=""><i class="fab fa-github"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
