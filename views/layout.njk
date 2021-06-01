@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./javascripts/spotifyapp.js" defer></script>
     <script
       src="https://kit.fontawesome.com/32f374c92f.js"
       crossorigin="anonymous"
@@ -25,39 +24,23 @@
       </div>
     </header>
     <main>
-      <form action="/artist" method="get">
-        <ul>
-        <li>
-          <label id="search">Find your favorite artist</label>
-        </li>
-        <li>
-          <div class="search-box">
-            <div class="search-icon"><i class="fas fa-search"></i></div>
-            <input type="text" name="name" id="search" required autofocus autocomplete="off"/>
-            <input type="hidden" name="market"  id="market">
-          </div>
-        </li>
-        <li>
-          <button type="submit">Search</button>
-        </li>
-      </ul>
-      </form>
+      {% block content %}
+      {% endblock %}
     </main>
     <footer>
       <div class="location">
-        <p><span id="city"></span>, <span id="country"></span></p>
+        <p><span id="city"></span> <span id="country"></span></p>
       </div>
       <div class="social">
         <div class="icon">
-          <a href="https://github.com/gustavosanchezgalarza" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/gustavosanchezgalarza"><i class="fab fa-github"></i></a>
         </div>
         <div class="icon">
-          <a href="https://twitter.com/gusanchedev" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://twitter.com/gusanchedev"><i class="fab fa-twitter"></i></a>
         </div>
         <div class="icon">
-          <a href="https://www.linkedin.com/in/gustavosanchezgdev/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/gustavosanchezgdev/"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </footer>
   </body>
-</html>
