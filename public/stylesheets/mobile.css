@@ -69,18 +69,6 @@ form {
   align-self: center;
   justify-self: center;
 }
-.artist-grid, .albums-grid, .tracks-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  justify-self: stretch;
-  align-self: stretch;
-  gap: 1rem;
-}
-.artist-image img, .album-image img,  .track-image video {
-  width: 100%;
-  height: 300px;
-}
 main iframe {
   align-self: center;
   justify-self: center;
@@ -151,3 +139,73 @@ footer {
 .icon a:hover {
   color: var(--color1);
 }
+
+/* Add styling for artist */
+.artist-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  justify-self: stretch;
+  align-self: stretch;
+  gap: 1.5rem;
+}
+.artist-image img {
+  width: 100%;
+  height: 300px;
+}
+.artist-info p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.4rem;
+}
+
+
+  /* Add styling for albums */
+
+  .albums-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-self: stretch;
+    align-self: stretch;
+    gap: 1.2rem;
+  }
+  .album-container {
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 0.2rem;
+  }
+  .album-image img {
+    width: 100%;
+    height: 150px;
+  }
+  .album-info p {
+    padding: 0.4rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+   /* Add styling for albums */
+
+   .tracks-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-self: stretch;
+    align-self: stretch;
+    gap: 1.2rem;
+  }
+  .track-container {
+    color: var(--color2);
+  }
+  .track-image video {
+    width: 100%;
+    height: 50px;
+  }
+  .track-info p {
+    padding: 0.4rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: var(--color2);
+    color: var(--color3);
+  }

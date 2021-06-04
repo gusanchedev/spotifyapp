@@ -3,12 +3,11 @@
 <div class="tracks-grid">
     {% for track in tracksToDisplay %}
     <div class="track-container">
-        <div class="track-image">
-           <video controls="" name="media"><source src="{{ track.preview_url | safe }}" type="audio/mpeg"></video>
-        </div>
         <div class="track-info">
             <p>{{ track.name }}</p>
-            <p>{{ track.duration_ms }}</p>
+        </div>
+        <div class="track-image">
+           <video controls="" name="media"><source src="{{ track.preview_url | safe }}" type="audio/mpeg"></video>
         </div>
     </div>
     {% else %}
