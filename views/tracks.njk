@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+{% block content %}
+<div class="tracks-grid">
+    {% for track in tracksToDisplay %}
+    <div class="track-container">
+        <div class="track-image">
+           <video controls="" name="media"><source src="{{ track.preview_url | safe }}" type="audio/mpeg"></video>
+        </div>
+        <div class="track-info">
+            <p>{{ track.name }}</p>
+            <p>{{ track.duration_ms }}</p>
+        </div>
+    </div>
+    {% else %}
+        <h2>Track not found!</h2>
+    {% endfor %}
+</div>
+{% endblock %}

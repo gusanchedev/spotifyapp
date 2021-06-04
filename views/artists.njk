@@ -4,18 +4,14 @@
     {% for artist in artistsToDisplay %}
     <div class="artist-container">
         <div class="artist-image">
-            <img src="{{artist.images[0].url | safe }}" alt="{{ artist.name | safe}}">
+           <a href="/artist/{{ artist.id | safe }}"><img src="{{artist.images[0].url | safe }}" alt="{{ artist.name | safe}}"></a>
         </div>
         <div class="artist-info">
             <p>{{ artist.name }}</p>
-            <p>{{ artist.id }}</p>
-            <p>{{ artist.popularity }}</p>
         </div>
     </div>
     {% else %}
         <h2>Artist not found!</h2>
     {% endfor %}
 </div>
-
-
 {% endblock %}

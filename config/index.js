@@ -9,6 +9,8 @@ const config = {
     spotifyClient: process.env.SPOTIFY_CLIENT,
     spotifySecret: process.env.SPOTIFY_SECRET,
     spotifySearchAPI: process.env.SPOTIFY_SEARCH_API,
+    spotifyArtistsAPI: process.env.SPOTIFY_ARTISTS_API,
+    spotifyAlbumAPI: process.env.SPOTIFY_ALBUM_API,
 }
 
 module.exports = config;

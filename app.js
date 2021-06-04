@@ -5,6 +5,7 @@ const logger = require('morgan');
 const nunjucks = require("nunjucks");
 
 const artistRouter = require('./routes/artist');
+const albumRouter =  require('./routes/album');
 
 const app = express();
 
@@ -21,5 +22,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/artist', artistRouter);
+app.use('/album', albumRouter);
 
 module.exports = app;
