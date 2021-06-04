@@ -26,6 +26,23 @@ header {
   color: var(--color3);
   padding: 1rem;
   font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myplaylist-icon {
+  margin: 0 1rem;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid var(--color3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myplaylist-icon a {
+  text-decoration: none;
+  color: #16c79a;
+  font-size: 1.2rem;
 }
 .logo {
   display: flex;
@@ -39,7 +56,7 @@ header {
   font-size: 2.5rem;
 }
 .logo p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--color1);
 }
@@ -64,6 +81,10 @@ form {
   width: 100%;
   height: 300px;
 }
+main iframe {
+  align-self: center;
+  justify-self: center;
+}
 main form ul {
   list-style: none;
   text-align: center;
@@ -77,6 +98,8 @@ form .search-box {
   border-radius: 1rem;
   display: flex;
   align-items: center;
+  margin: 1rem;
+  padding: 0.1rem 0.5rem;
 }
 .search-icon {
   display: inline-block;
@@ -87,7 +110,7 @@ form .search-box {
   color: var(--color2);
 }
 .search-box [type="text"] {
-  width: 80%;
+  width: 90%;
   border-style: none;
   padding: 0.2rem 0.3rem;
   outline: none;
@@ -97,7 +120,6 @@ form button {
   font-weight: bold;
   background-color: var(--color2);
   padding: 0.3rem 0.6rem;
-  margin-top: 1rem;
 }
 footer {
   flex-shrink: 0;

@@ -6,6 +6,7 @@ const nunjucks = require("nunjucks");
 
 const artistRouter = require('./routes/artist');
 const albumRouter =  require('./routes/album');
+const myplayListRouter = require('./routes/myplaylist');
 
 const app = express();
 
@@ -23,5 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/artist', artistRouter);
 app.use('/album', albumRouter);
+app.use('/myplaylist', myplayListRouter);
 
 module.exports = app;
