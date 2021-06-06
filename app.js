@@ -22,8 +22,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/artist', artistRouter);
-app.use('/album', albumRouter);
-app.use('/myplaylist', myplayListRouter);
+app.get('/spotifyapp/', function(req, res, next) {
+    res.redirect('/');
+})
+app.use('/spotifyapp/artist', artistRouter);
+app.use('/spotifyapp/album', albumRouter);
+app.use('/spotifyapp/myplaylist', myplayListRouter);
 
 module.exports = app;

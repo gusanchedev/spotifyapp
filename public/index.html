@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./javascripts/spotifyapp.js" defer></script>
+    <script src="/javascripts/spotifyapp.js" defer></script>
     <script
       src="https://kit.fontawesome.com/32f374c92f.js"
       crossorigin="anonymous"
@@ -20,13 +20,13 @@
   <body>
     <header>
       <div class="logo">
-        <a href="/"><i class="fab fa-spotify"></i></a>
+        <a href="/spotifyapp"><i class="fab fa-spotify"></i></a>
         <p>Spotify Finder App</p>
       </div>
-      <div class="myplaylist-icon"><a href="/myplaylist"><i class="fas fa-headphones-alt"></i></a></div>
+      <div class="myplaylist-icon"><a href="spotifyapp/myplaylist"><i class="fas fa-headphones-alt"></i></a></div>
     </header>
     <main>
-      <form action="/artist" method="get">
+      <form action="spotifyapp/artist" method="get">
         <ul>
         <li>
           <label id="search">Find your favorite artist</label>

@@ -4,7 +4,7 @@
     {% for artist in artistsToDisplay %}
     <div class="artist-container">
         <div class="artist-image">
-           <a href="/artist/{{ artist.id | safe }}"><img src="{{artist.images[0].url | safe }}" alt="{{ artist.name | safe}}"></a>
+           <a href="/spotifyapp/artist/{{ artist.id | safe }}"><img src="{{artist.images[0].url | safe }}" alt="{{ artist.name | safe}}"></a>
         </div>
         <div class="artist-info">
             <p>{{ artist.name }}</p>

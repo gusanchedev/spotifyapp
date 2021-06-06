@@ -4,7 +4,7 @@
     {% for album in albumsToDisplay %}
     <div class="album-container">
         <div class="album-image">
-           <a href="/album/{{ album.id | safe }}"><img src="{{album.images[0].url | safe }}" alt="{{ artist.name | safe}}"></a>
+           <a href="/spotifyapp/album/{{ album.id | safe }}"><img src="{{album.images[0].url | safe }}" alt="{{ artist.name | safe}}"></a>
         </div>
         <div class="album-info">
             <p>{{ album.name }}</p>
