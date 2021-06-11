@@ -7,7 +7,7 @@
             <p>{{ track.name }}</p>
         </div>
         <div class="track-image">
-           <video controls="" name="media"><source src="{{ track.preview_url | safe }}" type="audio/mpeg"></video>
+           <audio controls="" name="media"><source src="{{ track.preview_url | safe }}" type="audio/mpeg"></audio>
         </div>
     </div>
     {% else %}
